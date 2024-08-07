@@ -36,10 +36,7 @@ header{
 
 }
 
-nav img{
-    width: 15%;
-    margin: 0% 10%;
-}
+
 .li{
     position: absolute;
     display: flex;
@@ -51,10 +48,9 @@ nav img{
   border-radius:6em ;
 margin-top: 5%;
 animation-name: navani;
-animation-duration: 10s;
-animation-delay: 1s;
-
+animation-duration: 1.5s;
 }
+
 li:hover{
     background-color: rgb(30, 30, 30);
 }
@@ -78,20 +74,29 @@ nav  li ul:hover{
     color: rgb(255, 0, 0) ;
     font-size: 1.3em;
 
+}}
+.li img{
+    height: 4em;
+    border-radius: 100%;margin: 0% 10%;
 }
 @keyframes navani{
     0%{
      
-        top: 400%;
+        margin-top: -50%;
+    }
+    50%{
+        
+        margin-top: 25%;
     }
      100%{
         
-        top:10%;
+        margin-top: 5%;
      }
 }
-}
+
 #carrosel{
     position: absolute;
+    z-index: 1;
     width: 300%;
     height: 80vh;
     display: flex;
@@ -103,6 +108,7 @@ nav  li ul:hover{
 }
 .osp{
     background-image: linear-gradient(to top,rgba(255, 255, 255, 0),rgb(0, 0, 0));
+    height: 100%;
     padding: 26.9vh;
   text-align: center;
 }
@@ -136,7 +142,9 @@ background-image: url(https://images.pexels.com/photos/1143416/pexels-photo-1143
         background-image: url(https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         }
 @keyframes carrosel{
-25%{
+  
+    25%{
+
     left: 0;
    
 }
@@ -149,6 +157,7 @@ background-image: url(https://images.pexels.com/photos/1143416/pexels-photo-1143
 100%{
     left: 0;
 }
+
 }
 .espaco{
    height: 80vh;
@@ -163,9 +172,7 @@ background-image: url(https://images.pexels.com/photos/1143416/pexels-photo-1143
     width: 100%;
 }
 #meio{
-    
- 
- 
+
 display: flex;
 height: 70vh;
 }
@@ -256,8 +263,18 @@ height: 10%;
 transform: scale(1.1);
 background-image: linear-gradient(to top, black, rgb(40, 40, 40));
 box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.376);
+img{
+    margin-top: 0.2em;
+    transform: scale(1.1);
 }
+}
+.btn-pro img{
+    width: 1em;
+    height: 1em;
+    color: aliceblue;
+    margin-left: 1em;
 
+}
 #final{
     width: 100%;
 height: 100vh;
