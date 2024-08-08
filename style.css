@@ -17,7 +17,7 @@ a{
     text-decoration: none;
     color: black;
 }
-
+/* Parte do começo da Home */
 header{
 
     width: 100%;
@@ -59,8 +59,21 @@ nav li ul{
 nav  li ul a{
     color: rgb(250, 46, 46);
     font-size: 1.1em;
-    font-weight: 500px;
+    font-weight: 500;
     transition: all 0.2s ease-in;
+    text-wrap: nowrap;
+}
+.li ul select{
+    border: none;
+    background-color: transparent;
+    color: rgb(250, 46, 46);
+    font-size: 1.1em;
+    transition: all 0.2s ease-in;
+}
+.opt{
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: none;
 }
 nav  li ul:hover{
     background-color: rgba(0, 0, 0, 0.64);
@@ -91,7 +104,7 @@ nav  li ul:hover{
         margin-top: 5%;
      }
 }
-
+/* Parte de cima da Home */
 #carrosel{
     position: absolute;
     z-index: 1;
@@ -115,12 +128,7 @@ nav  li ul:hover{
     color:aliceblue;
 
 }
-/* {
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0),rgb(0, 0, 0));
-    padding: 26.9vh;
-    font-size: 4em;
-    color:aliceblue;
-} */
+
 .um{ 
     background-repeat: no-repeat;
 width:100%;
@@ -161,7 +169,7 @@ background-image: url(https://images.pexels.com/photos/1143416/pexels-photo-1143
    height: 80vh;
 }
 
-
+/* Parte do meio da Home */
 #meio{
 
 display: flex;
@@ -204,7 +212,7 @@ border-bottom: none;
 }
 
 .int{  
-    
+    font-weight: 400;
 flex-direction: column;
     width: 100%;
     height: 100%;
@@ -267,6 +275,7 @@ img{
     margin-left: 0.3em;
 
 }
+/* Parte final da Home */
 #final{
     width: 100%;
     display: flex;
@@ -336,6 +345,7 @@ border-radius: 1em;
 margin-top: 2%;
 }
 .pro3 p span{
+    font-weight: 500;
     color: rgb(255, 255, 53 );
     font-size: 1.1em;
 
@@ -422,23 +432,19 @@ transition: all 1s ease-in-out;
     }
         
     }
+    /* Footer */
     footer{
         box-shadow: inset 0px 5px 20px rgb(51, 51, 51);
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        justify-content: center;
+
         text-align: left;
-        padding: 10% 10% 13% 10%;
         background-color: black;
     }
     
     footer  li {
         margin-top: 5% ;
         display: flex;
-    }
-    footer  li ul{
-        margin-left: 2%;
     }
    footer  li ul a{
     font-size: 1.3em;
@@ -450,16 +456,20 @@ transition: all 1s ease-in-out;
         color: rgb(250, 46, 46);
         font-size: 1.4em;
     }
+    .ba{
+        display: flex;
+        justify-content: space-around;
+    }
     footer div{
         display: flex;
     }
     footer h2, footer h3{
      color: aliceblue;
-     margin-top: 9%;
+     margin-top: 15%;
     }
     footer span{
         color: #A92A2A;
-        margin: 0.5em;
+        margin-left: 0.5em;
         transition: all 0.5s ease-in-out;
     }
     footer span:hover{
@@ -470,9 +480,13 @@ transition: all 1s ease-in-out;
     footer p{
     
         color: rgb(255, 255, 165);
-        padding: 15% 5% 0% 2%;
+      margin:5% ;
+      margin-top: 1%;
        
     }
+
+
+/* Responsividade */
     @media (min-width:1020px){
         .roda{
             position: absolute;

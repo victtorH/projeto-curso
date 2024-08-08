@@ -1,0 +1,447 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Parte do começo do Portifolio */
+header {
+
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 9.5vh;
+
+
+}
+
+
+.li {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.656);
+    backdrop-filter: blur(5px);
+    padding: 0% 17%;
+    border-radius: 6em;
+    margin-top: 5%;
+    animation-name: navani;
+    animation-duration: 1.5s;
+}
+
+
+nav li ul {
+    margin: 2% 2%;
+    padding: 1% 4%;
+}
+
+nav li ul a {
+    color: rgb(234, 220, 27);
+    font-size: 1.1em;
+    font-weight: 500px;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+}
+
+.li ul select {
+    border: none;
+    background-color: transparent;
+    color: rgb(250, 46, 46);
+    font-size: 1.1em;
+    transition: all 0.2s ease-in;
+}
+
+.opt {
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: none;
+}
+
+nav li ul:hover {
+    background-color: rgba(0, 0, 0, 0.64);
+    backdrop-filter: blur(5px);
+    border-radius: 5em;
+
+
+    a {
+        color: rgb(255, 238, 0);
+        font-size: 1.3em;
+
+    }
+}
+
+.li img {
+    height: 4em;
+    border-radius: 100%;
+    margin: 0% 10%;
+}
+
+@keyframes navani {
+    0% {
+
+        margin-top: -50%;
+    }
+
+    50% {
+
+        margin-top: 25%;
+    }
+
+    100% {
+
+        margin-top: 5%;
+    }
+}
+
+
+
+/* começo do portifolio */
+.cima{
+    padding-bottom: 10em;
+    background-image: linear-gradient(to bottom, rgba(91, 91, 91, 0.338), rgb(255, 255, 255));
+}
+.vindo{
+    background-image: url(https://images.pexels.com/photos/194096/pexels-photo-194096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    
+    
+}
+.sombreado{
+ width: 100%;
+   height: 60vh;
+       background-image: linear-gradient(to bottom,black, transparent);
+}
+.Titulo{
+    position: relative;
+    top: 4em;
+    left: 2.7em;
+    font-size: 3.4em;
+  
+   
+    color: aliceblue;
+    animation-name: titulo;
+    animation-duration: 5s;
+    opacity: 1;
+    animation-iteration-count: initial;
+    transition: all 5s ease-in-out;
+}
+@keyframes titulo {
+    0%{
+        opacity: 0;
+        top: 7em;
+    }
+    25%{
+        opacity: 0;
+        top: 7em;
+    }
+    50%{
+        opacity: 1;
+      top: 4em;
+    }
+    100%{
+        opacity: 1;
+      top: 4em;
+        
+    }
+    
+}
+.arquitetura {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.arquitetura2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2em;
+}
+
+
+.projeto1 {
+    width: 90%;
+
+    border-radius: 2em;
+    display: flex;
+   
+  
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.308),
+        inset 1px 1px rgba(255, 255, 255, 0.576);
+    height: 30em;
+    margin: 1em;
+}
+
+.projeto1 h3 {
+    text-wrap: nowrap;
+    font-size: 1.3em;
+   margin-top: 1em;
+   font-weight: 700;
+   margin-bottom: 3em ;
+   
+}
+
+.conteudo {
+    width: 50%;
+    display: flex;
+  
+align-items: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 1% 3%;
+    
+    margin: 2%;
+    background-image: linear-gradient(to top, transparent, rgba(142, 142, 142, 0.267));
+    border-radius: 1em;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.conteudo p {
+   font-weight:500;
+    margin: 1em 2em;
+    text-wrap: nowrap;
+
+}
+
+.verificado1,.verificado2,.verificado3,.verificado4{height: 0.8em;
+  margin-left:0.2em ;
+    animation-name: verificado;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+.verificado1{
+animation-duration: 10s;
+}
+.verificado2{
+    animation-duration: 10.1s;
+}
+.verificado3{
+    animation-duration: 10.2s;
+}
+.verificado4{
+    animation-duration: 10.3s;
+}
+@keyframes verificado {
+11.25%{
+        opacity: 0;
+    }
+22.5%{
+        opacity: 1;
+    }
+60%{
+        opacity: 1;
+    }
+65%{
+        opacity:0;
+    }
+  
+  
+}
+.conteudo:hover{
+  transform: scale(1.02);
+  box-shadow:   1px 1px 10px rgba(0, 0, 0, 0.289);
+}
+.sombra{
+    border-radius: 1em;
+    height: 94%;
+    width: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+  
+}
+
+.ft{
+background-image: url(https://images.pexels.com/photos/4123921/pexels-photo-4123921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+width: 50%;
+margin: 2%;
+border-radius: 1em;
+position:relative;
+transition: all 0.3s ease-in-out ;
+}
+
+.ft span a{
+    font-weight: 400;
+    font-size: 1.1em;
+margin-right: 1em;
+padding: 0.7em 4em;
+background-color: rgb(0, 0, 0);
+border-radius: 8em;
+color: white;
+}
+.ft  .span2{   
+   
+     border-radius: 0em 3em 0em 0em;
+    position:relative;
+   transition: all 0.4s ease-in-out;
+    left: 0em;
+   top: 25em;
+    background-color:rgb(255, 255, 255);
+padding: 1.8em ;
+   
+}
+.ft .span2::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: absolute;
+    left: 18.9em;
+    bottom: 0.4em;
+    box-shadow: -7.5px 9px rgb(255, 255, 255);
+background-color:transparent;
+transition: all 0.3s ease-in-out ;
+    
+}
+
+.ft span::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: absolute;
+    left: 0em;
+    bottom: 4.6em;
+    box-shadow: -9px 9px rgb(255, 255, 255);
+background-color:transparent;
+transition: all 0.3s ease-in-out ;
+    
+}
+
+.ft:hover{
+    transform: scale(1.02);
+  box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.439);
+  .sombra{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
+  }
+  span::before{
+   box-shadow: none;
+  }
+ span{
+  background-color: transparent;
+  a{
+    font-weight: 600 ;
+    background-color: rgb(234, 220, 27);
+    color: black;
+  }
+ }
+}
+
+/* segundo produto */
+.ft2{
+    background-image: url(https://images.pexels.com/photos/5957136/pexels-photo-5957136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+    width: 50%;
+    margin: 2%;
+    border-radius: 1em;
+    position:relative;
+    transition: all 0.3s ease-in-out ;
+    }
+    
+    .ft2 .span  a{
+        font-weight: 400;
+        font-size: 1.1em;
+    margin-right: 1em;
+    padding: 0.7em 4em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8em;
+    color: white;
+    }
+ 
+    .ft2 .span span::before{
+        content: ' ';
+        height: 2em;
+        width: 2em;
+        border-radius: 100%;
+        position: absolute;
+        left: -2em;
+        bottom: 0.4em;
+        box-shadow: 10px 10px 0px rgb(255, 255, 255);
+background-color: transparent;
+transition: all 0.3s ease-in-out ;
+        
+    }
+    .span{
+        border-radius: 3em 0em 1em 0em;
+     position: relative;
+     left: 6em;
+     top: 25em;
+       transition: all 0.3s ease-in-out;
+    
+        background-color:rgb(255, 255, 255);
+    padding: 1.8em ;
+       
+    }
+     .span::before{
+        content: ' ';
+        height: 2em;
+        width: 2em;
+        border-radius: 100%;
+        position: absolute;
+        right: 2em;
+        bottom: 5em;
+        box-shadow: 10px 10px 0px rgb(255, 255, 255);
+background-color: transparent;
+transition: all 0.3s ease-in-out ;
+        
+    }
+    .ft2:hover{
+        transform: scale(1.02);
+      box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.439);
+      .sombra{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
+      }
+      span::before{
+        box-shadow: none;
+      }
+     span{
+      background-color: transparent;
+      a{
+        font-weight: 600 ;
+        background-color: rgb(234, 220, 27);
+        color: black;
+      }
+     }
+    }
+    .meio{
+        background-color: transparent;
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 10em;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.313);
+    }
