@@ -430,6 +430,7 @@ transition: all 0.3s ease-in-out ;
         box-shadow: none;
       }
      span{
+        
       background-color: transparent;
       a{
         font-weight: 600 ;
@@ -559,4 +560,50 @@ transition: all 0.3s ease-in-out ;
       100%{
         opacity: 1;
       }
+     }
+     @media (min-width:1500px) {
+
+
+      
+
+        .ft span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 0em;
+            bottom: 3.2em;
+            box-shadow: -9px 9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
+            
+        }
+
+        .ft .span2::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 18.8em;
+            bottom: 1.6em;
+            box-shadow: -7.5px 8.9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
+            
+        }
+
+/* segundo produto */
+          .span{
+            border-radius: 3em 0em 1em 0em;
+         position: relative;
+         left: 20em;
+         top: 24em;
+           transition: all 0.3s ease-in-out;
+        
+            background-color:rgb(255, 255, 255);
+        padding: 1.8em ;
+           
+        }
      }
