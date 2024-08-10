@@ -139,11 +139,14 @@ nav li ul:hover {
  width: 100%;
    height: 60vh;
        background-image: linear-gradient(to bottom,black, transparent);
+       display: flex;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
 }
 .Titulo{
     position: relative;
-    top: 4em;
-    left: 2.7em;
+  
     font-size: 3.4em;
   
    
@@ -165,11 +168,11 @@ nav li ul:hover {
     }
     50%{
         opacity: 1;
-      top: 4em;
+     top: 0em;
     }
     100%{
         opacity: 1;
-      top: 4em;
+     top: 0em;
         
     }
     
@@ -417,7 +420,7 @@ transition: all 0.3s ease-in-out ;
         bottom: 5em;
         box-shadow: 10px 10px 0px rgb(255, 255, 255);
 background-color: transparent;
-transition: all 0.3s ease-in-out ;
+transition: all 0.3s ease-in-out;
         
     }
     .ft2:hover{
@@ -427,7 +430,8 @@ transition: all 0.3s ease-in-out ;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
       }
       span::before{
-        box-shadow: none;
+       
+        display: none;
       }
      span{
         
@@ -505,65 +509,85 @@ transition: all 0.3s ease-in-out ;
         /* .componentes2, .componentes3{
         
         } */
-     .componentes{
-        animation-duration: 10s;
+     .meio{
+        animation-duration: 60s;
         animation-name: trabalhos;
      }
-     .componentes2{
-        animation-duration: 10s;
+     .meio2{
+        animation-duration: 60s;
         animation-name: trabalhos2;
      }
-     .componentes3{
-        animation-duration: 10s;
+     .meio3{
+        animation-duration: 60s;
         animation-name: trabalhos3;
      }
      
      @keyframes trabalhos {
       0%{
+        display: inline;
         opacity: 1;
       }
-      32%{
+      32%{display: inline;
         opacity: 1;
       }
       33%{
+        display: none;
         opacity: 0;
       }
      }
      @keyframes trabalhos2 {
         0%{
+            display: none;
             opacity: 0;
         }
         32%{
+            display: none;
             opacity: 0;
         }
       33%{
+        display: inline;
         opacity: 1;
       }
       65%{
+        display: inline;
         opacity: 1;
       }
       66%{
+        display: none;
         opacity: 0;
       }
 
      }   @keyframes trabalhos3 {
         0%{
-            opacity: 0;
+            display: none;
+        opacity: 0;
         }
         65%{
-            opacity: 0;
+            display: none;
+        opacity: 0;
         }
      66%{
+        display: inline;
         opacity: 1;
       }
         
       100%{
+        display: inline;
         opacity: 1;
       }
      }
      @media (min-width:1500px) {
-
-
+        .ft  .span2{   
+   
+            border-radius: 0em 3em 0em 0em;
+           position:relative;
+          transition: all 0.4s ease-in-out;
+           left: 0em;
+          top: 23.5em;
+           background-color:rgb(255, 255, 255);
+       padding: 1.8em ;
+          
+       }
       
 
         .ft span::before{
@@ -573,7 +597,7 @@ transition: all 0.3s ease-in-out ;
             border-radius: 100%;
             position: absolute;
             left: 0em;
-            bottom: 3.2em;
+            bottom: 4.8em;
             box-shadow: -9px 9px rgb(255, 255, 255);
         background-color:transparent;
         transition: all 0.3s ease-in-out ;
@@ -587,7 +611,7 @@ transition: all 0.3s ease-in-out ;
             border-radius: 100%;
             position: absolute;
             left: 18.8em;
-            bottom: 1.6em;
+            bottom: 0.18em;
             box-shadow: -7.5px 8.9px rgb(255, 255, 255);
         background-color:transparent;
         transition: all 0.3s ease-in-out ;
@@ -599,11 +623,37 @@ transition: all 0.3s ease-in-out ;
             border-radius: 3em 0em 1em 0em;
          position: relative;
          left: 20em;
-         top: 24em;
+         top: 23.5em;
            transition: all 0.3s ease-in-out;
         
             background-color:rgb(255, 255, 255);
         padding: 1.8em ;
            
+        }
+        .ft2 .span span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: -1.99em;
+            bottom: 0.2em;
+            box-shadow: 10px 10px 0px rgb(255, 255, 255);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out ;
+            
+        }
+        .span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 16.35em;
+            bottom: 5em;
+            box-shadow: 10px 10px 0px rgb(255, 255, 255);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out ;
+            
         }
      }
