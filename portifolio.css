@@ -63,7 +63,7 @@ nav li ul {
 }
 
 nav li ul a {
-    color: rgb(234, 220, 27);
+    color: rgb(250, 46, 46);
     font-size: 1.1em;
     font-weight: 500px;
     transition: all 0.2s ease-in;
@@ -91,7 +91,7 @@ nav li ul:hover {
 
 
     a {
-        color: rgb(255, 238, 0);
+        color: rgb(255, 0, 0) ;
         font-size: 1.3em;
 
     }
@@ -132,12 +132,13 @@ nav li ul:hover {
     background-size: cover;
     width: 100%;
     height: 60vh;
-    
+    background-attachment: fixed;
     
 }
 .sombreado{
+
  width: 100%;
-   height: 60vh;
+height: 100%;
        background-image: linear-gradient(to bottom,black, transparent);
        display: flex;
        align-items: center;
@@ -152,7 +153,7 @@ nav li ul:hover {
    
     color: aliceblue;
     animation-name: titulo;
-    animation-duration: 5s;
+    animation-duration: 3s;
     opacity: 1;
     animation-iteration-count: initial;
     transition: all 5s ease-in-out;
@@ -288,14 +289,18 @@ animation-duration: 10s;
   
 }
 
-.ft{
-background-image: url(https://images.pexels.com/photos/4123921/pexels-photo-4123921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+.ft, .ft2, .ft3, .ft4{
     background-size: cover;
-width: 50%;
-margin: 2%;
-border-radius: 1em;
-position:relative;
-transition: all 0.3s ease-in-out ;
+    width: 50%;
+    margin: 2%;
+    border-radius: 1em;
+    position:relative;
+    transition: all 0.3s ease-in-out ;
+}
+.ft{
+ 
+background-image: url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
 }
 
 .ft span a{
@@ -368,12 +373,6 @@ transition: all 0.3s ease-in-out ;
 /* segundo produto */
 .ft2{
     background-image: url(https://images.pexels.com/photos/5957136/pexels-photo-5957136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        background-size: cover;
-    width: 50%;
-    margin: 2%;
-    border-radius: 1em;
-    position:relative;
-    transition: all 0.3s ease-in-out ;
     }
     
     .ft2 .span  a{
@@ -391,7 +390,7 @@ transition: all 0.3s ease-in-out ;
         height: 2em;
         width: 2em;
         border-radius: 100%;
-        position: absolute;
+        position: relative;
         left: -2em;
         bottom: 0.4em;
         box-shadow: 10px 10px 0px rgb(255, 255, 255);
@@ -445,11 +444,12 @@ transition: all 0.3s ease-in-out;
     }
     .meio{
          height: 51vh;
-        background-color: transparent;
+ background-image: url();
+ background-attachment: fixed;
      width: 100%;
-     padding: 1%;
-        margin-bottom: 10em;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.313);
+
+        margin-bottom: 7em;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.475);
         align-items: center;
         text-align: center;
 
@@ -462,10 +462,16 @@ transition: all 0.3s ease-in-out;
     margin-left: 2em;
     }
     .p{
-        
-        margin-top: 6em;
+        position: relative;
+        transition: all 2s ease-in-out ;
+        animation-duration: 60s;
+        animation-name: paragrafo;
+        animation-iteration-count: infinite;
+        margin-top: 60em;
         width: 45%;
-        margin: 3em 0em 0em 2em;
+        margin: 1em 0em 0em 2em;
+        font-size: 1.1em;
+        color: rgb(0, 0, 0);
     }
     .componentes, .componentes2, .componentes3{
         transition: all 1s ease-in-out;
@@ -476,17 +482,22 @@ transition: all 0.3s ease-in-out;
         text-align: left;
         position: relative;
         animation-iteration-count: infinite;
-        opacity: 0;
+        animation-duration: 60s;
+      
     }
     .trabalhos p, .trabalhos2 p, .trabalhos3 p{
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 500;
-        color: rgb(0, 0, 0);
+       color: transparent;
+       -webkit-text-stroke: 1px rgb(255, 255, 255);
         padding: 0em;
-        backdrop-filter: blur(10px);
-       padding: 4.3em 0em ;
+        backdrop-filter: blur(2px);
+       padding: 2.6em 0em ;
+       background-color: rgba(0, 0, 0, 0.149);
        width: 100%;
-        border-radius: 1em;
+        border-radius: 0.6em;
+        transition: all 0.2s ease-in-out;
+       
         
        
     }
@@ -497,85 +508,327 @@ transition: all 0.3s ease-in-out;
         display: flex;
         justify-content: center;
         margin: 3%;
+        margin-top: 2%;
         height: 20em;
         width: 25em;
         border-radius: 2em;
         background-size: cover;
-        box-shadow: inset 2px 2px 20px rgba(85, 85, 85, 0.554);
+        box-shadow: inset 1px 10px 20px rgba(255, 241, 241, 0);
 
-
+        transition: all 0.3s ease-in-out;
 
     }
-        /* .componentes2, .componentes3{
-        
-        } */
-     .meio{
-        animation-duration: 60s;
+     
+    .trabalhos:hover, .trabalhos2:hover, .trabalhos3:hover{
+        transform: scale(1.04);
+       p{
+            color: rgb(255, 255, 255) ;
+
+        }
+    }
+     .componentes{
         animation-name: trabalhos;
      }
-     .meio2{
-        animation-duration: 60s;
+     .componentes2{
         animation-name: trabalhos2;
      }
-     .meio3{
-        animation-duration: 60s;
+     .componentes3{
         animation-name: trabalhos3;
      }
      
      @keyframes trabalhos {
-      0%{
-        display: inline;
+        0%{
+            display: none;
+            opacity: 0;
+            bottom: -5%;
+            transform:rotateX(-20deg);
+        }
+      1%{
+       display:flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
       }
-      32%{display: inline;
+      31%{
+        display: flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
       }
-      33%{
+      32%{
         display: none;
         opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
+      }
+      100%{
+        display: none;
+        opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
       }
      }
      @keyframes trabalhos2 {
         0%{
             display: none;
             opacity: 0;
+            bottom: -5%;
+            transform:rotateX(-20deg);
         }
         32%{
             display: none;
             opacity: 0;
+            bottom: -5%;
+            transform:rotateX(-20deg);
         }
       33%{
-        display: inline;
+       display:flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
       }
       65%{
-        display: inline;
+       display:flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
       }
       66%{
         display: none;
         opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
       }
-
-     }   @keyframes trabalhos3 {
+100%{
+    display: none;
+    opacity: 0;
+    bottom: -5%;
+    transform:rotateX(-20deg);
+}
+     }  
+      @keyframes trabalhos3 {
         0%{
             display: none;
         opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
         }
-        65%{
+        66%{
             display: none;
         opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
         }
-     66%{
-        display: inline;
+     67%{
+       display:flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
       }
         
-      100%{
-        display: inline;
+      99%{
+       display:flex;
         opacity: 1;
+        bottom: 0%;
+        transform:rotateX(0deg);
+      }
+      100%{
+        display: none;
+        opacity: 0;
+        bottom: -5%;
+        transform:rotateX(-20deg);
       }
      }
+     .trabalhos{
+        background-image: url(https://images.pexels.com/photos/2409038/pexels-photo-2409038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     }
+     .trabalhos2{
+        background-image: url(https://images.pexels.com/photos/5947856/pexels-photo-5947856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     }
+     .trabalhos3{
+        background-image: url(https://images.pexels.com/photos/4627357/pexels-photo-4627357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     }
+     @keyframes paragrafo{
+        0%{
+            
+            left: -30%;
+            opacity: 0;
+        }
+        1%{
+         
+            left: -30%;
+            opacity: 0;
+        }
+        2%{
+            left: 0%;
+          
+        }
+        4%{
+            opacity: 1;
+        }
+        31%{
+            opacity: 1;
+            left: 0%;
+        }
+     31.3%{
+        opacity: 0 ;   
+     }
+        32.5%{
+            left: -30%;
+     
+        }
+       
+        100%{
+            left: -30%;     
+            opacity: 0;
+
+        }
+     }
+
+     .ft3{
+        background-image: url(  https://images.pexels.com/photos/2119714/pexels-photo-2119714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     }
+
+
+.ft3 span a{
+    font-weight: 400;
+    font-size: 1.1em;
+margin-right: 1em;
+padding: 0.7em 4em;
+background-color: rgb(0, 0, 0);
+border-radius: 8em;
+color: white;
+}
+.ft3  .span2{   
+   
+     border-radius: 0em 3em 0em 0em;
+    position:relative;
+   transition: all 0.4s ease-in-out;
+    left: 0em;
+   top: 25em;
+    background-color:rgb(255, 255, 255);
+padding: 1.8em ;
+   
+}
+.ft3 .span2::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: absolute;
+    left: 18.9em;
+    bottom: 0.4em;
+    box-shadow: -7.5px 9px rgb(255, 255, 255);
+background-color:transparent;
+transition: all 0.3s ease-in-out ;
+    
+}
+
+.ft3 span::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: absolute;
+    left: 0em;
+    bottom: 4.6em;
+    box-shadow: -9px 9px rgb(255, 255, 255);
+background-color:transparent;
+transition: all 0.3s ease-in-out ;
+    
+}
+
+.ft3:hover{
+    transform: scale(1.02);
+  box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.439);
+  .sombra{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
+  }
+  span::before{
+   box-shadow: none;
+  }
+ span{
+  background-color: transparent;
+  a{
+    font-weight: 600 ;
+    background-color: rgb(234, 220, 27);
+    color: black;
+  }
+ }
+}
+.ft4{
+    background-image: url(https://images.pexels.com/photos/2204880/pexels-photo-2204880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+   
+.ft4 .span  a{
+    font-weight: 400;
+    font-size: 1.1em;
+margin-right: 1em;
+padding: 0.7em 4em;
+background-color: rgb(0, 0, 0);
+border-radius: 8em;
+color: white;
+}
+
+.ft4 .span span::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: relative;
+    left: -2em;
+    bottom: 0.4em;
+    box-shadow: 10px 10px 0px rgb(255, 255, 255);
+background-color: transparent;
+transition: all 0.3s ease-in-out ;
+    
+}
+.span{
+    border-radius: 3em 0em 1em 0em;
+ position: relative;
+ left: 5em;
+ top: 25em;
+   transition: all 0.3s ease-in-out;
+
+    background-color:rgb(255, 255, 255);
+padding: 1.8em ;
+   
+}
+ .span::before{
+    content: ' ';
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    position: absolute;
+    left: 14.6em;
+    bottom: 5em;
+    box-shadow: 10px 10px 0px rgb(255, 255, 255);
+background-color: transparent;
+transition: all 0.3s ease-in-out;
+    
+}
+.ft4:hover{
+    transform: scale(1.02);
+  box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.439);
+  .sombra{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.708), transparent);
+  }
+  span::before{
+   
+    display: none;
+  }
+ span{
+    
+  background-color: transparent;
+  a{
+    font-weight: 600 ;
+    background-color: rgb(234, 220, 27);
+    color: black;
+  }
+ }
+}
+
+     /* Responsividade */
      @media (min-width:1500px) {
         .ft  .span2{   
    

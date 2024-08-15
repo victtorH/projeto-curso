@@ -130,40 +130,48 @@ nav  li ul:hover{
 }
 
 .um{ 
+    background-attachment: fixed;
     background-repeat: no-repeat;
 width:100%;
  background-size: cover;
 background-image: url(https://images.pexels.com/photos/1143416/pexels-photo-1143416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .dois{ 
+    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
      background-size: cover;
     background-image: url(https://images.pexels.com/photos/1309897/pexels-photo-1309897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     }
     .tres{ 
+        background-attachment: fixed;
         background-repeat: no-repeat;
         width: 100%;
          background-size: cover;
         background-image: url(https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         }
 @keyframes carrosel{
-  
-    25%{
-
+0%{
     left: 0;
-   
+}
+15%{
+    left: 0;
+}
+30%{
+    left: -100%;
 }
 50%{
-    left:-100%;
+    left: -100%;
 }
-80%{
-     left:-200%;
+65%{
+    left: -200%;
+}
+80%{    
+    left: -200%;
 }
 100%{
-    left: 0;
+left: 0;
 }
-
 }
 .espaco{
    height: 80vh;
@@ -237,6 +245,7 @@ flex-direction: column;
 width:25%;
     background-size: cover;
     background-image: url(https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
 
 }
 
@@ -527,14 +536,22 @@ transition: all 1s ease-in-out;
 
     }
 }
+
     @media (max-width:1100px){
+       
         .roda{
             position: absolute;
         width: 13.5em;
         height: 13.5em;
          left: 50em;
-         bottom: -39em;
+         bottom: -40em;
         }
+        .blur{
+        
+            bottom: -21.1em;
+             box-shadow: 1px 1px 20px black;
+             height: 70vh;
+         }
         
         .direita, .esquerda{
             margin-top: 2em;
@@ -543,4 +560,83 @@ transition: all 1s ease-in-out;
             .blur h1 {
                 margin: 20% 0%;
             }
+            .pro2{
+                width: 25em;
+                height: 15em;
+            }
+            .pro1{
+                width: 20em;
+                height: 20em;
+                margin-left: 20%;
+                margin-bottom: 10%;
+            }
+            .esquerda a{
+                margin-left:10%;
+                margin-bottom: 10%;
+                margin-top: 2%;
+        
+            }
+            .int a{
+                margin-top: 5%;
+                margin-right: 0%;
+            }
+            .projeto-c{
+                transition: all 2s step-end;
+            z-index: 2;
+            display: flex;
+            top: 40em;
+            position: absolute;
+            width: 100%;
+            height: 12em;
+          
+            }
+    }
+
+    @media (max-width:1020px){
+
+            .blur{
+        
+       bottom: -22.5em;
+        box-shadow: 1px 1px 20px black;
+        height: 70vh;
+    }
+    .blur h1{
+        margin-top: 0%;
+    }
+    .int a{
+        margin-top: 5%;
+        margin-right: 0%;
+    }
+    .projeto-c{
+        transition: all 2s step-end;
+    z-index: 2;
+    display: flex;
+    top: 40em;
+    position: absolute;
+    width: 100%;
+    height: 12em;
+  
+    }
+
+    .roda{
+        left: 45em;
+        bottom: -38em;
+       }
+       .pro2{
+           width: 25em;
+           height: 15em;
+       }
+       .pro1{
+           width: 20em;
+           height: 20em;
+           margin-left: 20%;
+           margin-bottom: 10%;
+       }
+       .esquerda a{
+           margin-left:10%;
+           margin-bottom: 10%;
+           margin-top: 2%;
+   
+       }
+
     }
