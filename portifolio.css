@@ -510,8 +510,8 @@ transition: all 0.3s ease-in-out;
         margin: 3%;
         margin-top: 2%;
         height: 20em;
-        width: 25em;
-        border-radius: 2em;
+        width: 30em;
+        border-radius: 1em;
         background-size: cover;
         box-shadow: inset 1px 10px 20px rgba(255, 241, 241, 0);
 
@@ -523,7 +523,7 @@ transition: all 0.3s ease-in-out;
         transform: scale(1.04);
        p{
             color: rgb(255, 255, 255) ;
-
+            backdrop-filter: blur(0px);
         }
     }
      .componentes{
@@ -700,8 +700,7 @@ border-radius: 8em;
 color: white;
 }
 .ft3  .span2{   
-   
-     border-radius: 0em 3em 0em 0em;
+    border-radius: 0em 3em 0em 0em;
     position:relative;
    transition: all 0.4s ease-in-out;
     left: 0em;
