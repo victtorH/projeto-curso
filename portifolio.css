@@ -390,12 +390,12 @@ transition: all 0.3s ease-in-out ;
         height: 2em;
         width: 2em;
         border-radius: 100%;
-        position: relative;
+        position: absolute;
         left: -2em;
-        bottom: 0.4em;
+        bottom:0.4em;
         box-shadow: 10px 10px 0px rgb(255, 255, 255);
 background-color: transparent;
-transition: all 0.3s ease-in-out ;
+transition: all 0.3s ease-in-out;
         
     }
     .span{
@@ -415,7 +415,7 @@ transition: all 0.3s ease-in-out ;
         width: 2em;
         border-radius: 100%;
         position: absolute;
-        left: 14.6em;
+        left:15.5em;
         bottom: 5em;
         box-shadow: 10px 10px 0px rgb(255, 255, 255);
 background-color: transparent;
@@ -774,14 +774,15 @@ color: white;
     height: 2em;
     width: 2em;
     border-radius: 100%;
-    position: relative;
+    position: absolute;
     left: -2em;
-    bottom: 0.4em;
+    bottom: 0.5em;
     box-shadow: 10px 10px 0px rgb(255, 255, 255);
 background-color: transparent;
 transition: all 0.3s ease-in-out ;
     
 }
+
 .span{
     border-radius: 3em 0em 1em 0em;
  position: relative;
@@ -793,19 +794,7 @@ transition: all 0.3s ease-in-out ;
 padding: 1.8em ;
    
 }
- .span::before{
-    content: ' ';
-    height: 2em;
-    width: 2em;
-    border-radius: 100%;
-    position: absolute;
-    left: 14.6em;
-    bottom: 5em;
-    box-shadow: 10px 10px 0px rgb(255, 255, 255);
-background-color: transparent;
-transition: all 0.3s ease-in-out;
-    
-}
+
 .ft4:hover{
     transform: scale(1.02);
   box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.439);

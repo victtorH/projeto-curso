@@ -5,7 +5,14 @@
      
 }
 html{
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+:root{
+  --cor1: rgba(0, 0, 0, 0.697);
+  --cor2: rgb(250, 46, 46) ;
+  --cor3: rgb(255, 255, 53 );
+  --cor4: rgba(96, 96, 96, 0.59);
+  --cor5: white;
 }
 
 img{
@@ -15,8 +22,7 @@ img{
 }
 section{
 width: 100%;
-height: 100vh;
-
+height: 90vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -24,47 +30,79 @@ text-align: center;
 
 
 }
-.conteiner{
-    display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-    border-radius: 2em;
-        width: 90%;
-    height: 90vh;
-   position: relative;
-   top: -5%;
-    background-color: rgba(97, 97, 97, 0.274);
-    box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.479);
-}
-.dentro{
-    background-color: rgba(0, 0, 0, 0.397);
-    width: 97%;
-    height: 97%;
-    border-radius:3em ;
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.562);
-}
-summary{
-   height: 90vh;
-}
-.contatos, .contatos2{
-    border: solid 1px  rgba(0, 0, 0, 0) ;
-    border-radius: 3em ;
-    /* height: 48.1%; */
-    width: 100%;
-
-
+.content{
+ width: 90%;
+ height:95%;
+ border-radius: 2em;
+ border: 15px solid var(--cor4) ;
+ background-color:var(--cor1) ;
+ display: flex;
+ align-items: top;
+ align-items: center;
+ flex-direction: column;
+ 
 
 }
-.contatos{
-    border-radius: 3em 3em 0em 0em;
+.grid{
+    background-color: var(--cor4);
+    margin-top: 1%;
+  width: 90%;
+  padding: 3%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5em;
+
 }
-.contatos2{
-border-radius: 0em 0em 3em 3em;
+.grid1 ,.grid2{
+display: grid;
+animation-duration: 2s;
+
 }
-.contatos img, .contatos2 img{
-width: 95%;
-background-size: cover;
-background-attachment: fixed;
-/* height: 35vh; */
+.grid1{
+    animation-name: direita;
+    grid-template-columns:3fr 2fr;
+}
+.grid2{
+    grid-template-columns: 3fr 2fr;
+animation-name: esquerda;
+}
+
+
+.tabela {
+  
+    height: 10em;
+    width: 25em;
+    background-color: var(--cor3);
+    border-radius: 1em 0em 0em 1em;
+    margin: 5% 0% 1% 0%;
+    clip-path: polygon(99% 0%, 0% 0%, 0% 100%, 90% 100%);
+}
+
+
+.final{
+    border-radius: 0em 1em 1em 0em ;
+     clip-path: polygon(1% 100%, 100% 100%, 100% 0%, 10% 0%);
+     margin: 0% 0% 0% 0%;
+}
+
+.bola{
+    height: 3em;
+    width: 3em;
+     border-radius: 100%;
+}
+.content a{
+    margin-top:6em ;
+    padding: 1.5em 10em ;
+        background-color: var(--cor1);
+        border-radius: 5em;
+        color: var(--cor3);
+        text-decoration: none;
+
+}
+a i{
+    margin-left: 0.3em;
+    font-size: 1.5em;
 }
