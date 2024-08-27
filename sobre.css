@@ -1,0 +1,187 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Parte do começo sobre*/
+header {
+
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 9.5vh;
+
+
+}
+
+
+.li {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.656);
+    backdrop-filter: blur(5px);
+    padding: 0% 17%;
+    border-radius: 6em;
+    margin-top: 5%;
+    animation-name: navani;
+    animation-duration: 1.5s;
+}
+
+
+nav li ul {
+    margin: 2% 2%;
+    padding: 1% 4%;
+}
+
+nav li ul a {
+    color: rgb(250, 46, 46);
+    font-size: 1.1em;
+    font-weight: 500px;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+}
+
+.li ul select {
+    border: none;
+    background-color: transparent;
+    color: rgb(250, 46, 46);
+    font-size: 1.1em;
+    transition: all 0.2s ease-in;
+}
+
+.opt {
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: none;
+}
+
+nav li ul:hover {
+    background-color: rgba(0, 0, 0, 0.64);
+    backdrop-filter: blur(5px);
+    border-radius: 5em;
+
+
+    a {
+        color: rgb(255, 0, 0) ;
+        font-size: 1.3em;
+
+    }
+}
+
+.li img {
+    height: 4em;
+    border-radius: 100%;
+    margin: 0% 10%;
+}
+
+@keyframes navani {
+    0% {
+
+        margin-top: -50%;
+    }
+
+    50% {
+
+        margin-top: 25%;
+    }
+
+    100% {
+
+        margin-top: 5%;
+    }
+}
+
+/* Parte do inicio do sobre */
+.tep,.meio{  
+     position: absolute;
+      height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+}
+.tep{
+    z-index: 2;
+  
+
+}
+
+
+
+.meio{
+    z-index: 1;
+    margin-top: 200vh;
+    
+background-color: cadetblue;
+}
+.imagens{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+.um,.dois,.tres,.quatro{
+    animation-name:eles;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: all 2s ;
+}
+ .um{
+    
+ animation-duration: 5s;
+}
+.dois{
+    animation-duration: 5.2s;
+}
+.tres{
+    animation-duration: 5.4s;
+}
+.quatro{
+    animation-duration: 5.6s;
+}
+.img {  
+     /* background-size: cover; */
+    background-attachment: fixed;   
+    background-image: url(https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+width: 100%;
+height: 100%;
+
+}
+@keyframes eles{
+    0%{
+        top:0%;
+    }
+    50%{
+        top: -100%;
+    }
+    100%{
+        top:0%;
+    }
+}
