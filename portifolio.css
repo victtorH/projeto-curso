@@ -812,12 +812,98 @@ padding: 1.8em ;
     font-weight: 600 ;
     background-color: rgb(234, 220, 27);
     color: black;
+
   }
  }
 }
 
      /* Responsividade */
-     @media (min-width:1500px) {
+   @media (max-width:1300){
+    
+   }
+        .ft  .span2{   
+   
+            border-radius: 0em 3em 0em 0em;
+           position:relative;
+          transition: all 0.4s ease-in-out;
+           left: 0em;
+          top: 24.6em;
+           background-color:rgb(255, 255, 255);
+       padding: 1.8em ;
+          
+       }
+      
+
+        .ft span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 0em;
+            bottom: 4.8em;
+            box-shadow: -9px 9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
+            
+        }
+
+        .ft .span2::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 18.8em;
+            bottom: 0.18em;
+            box-shadow: -7.5px 8.9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
+            
+        }
+
+/* segundo produto */
+          .span{
+            border-radius: 3em 0em 1em 0em;
+         position: relative;
+         left: 6.5em;
+         top: 24.5em;
+           transition: all 0.3s ease-in-out;
+        
+            background-color:rgb(255, 255, 255);
+        padding: 1.8em ;
+           
+        }
+        .ft2 .span span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: -1.99em;
+            bottom: 0.2em;
+            box-shadow: 10px 10px 0px rgb(255, 255, 255);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out ;
+            
+        }
+        .span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 16.35em;
+            bottom: 5em;
+            box-shadow: 10px 10px 0px rgb(255, 255, 255);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out ;
+            
+        }
+     
+
+     
+     @media (max-width:1600px) {
         .ft  .span2{   
    
             border-radius: 0em 3em 0em 0em;
