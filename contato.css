@@ -101,6 +101,7 @@ margin: 10% 0% 1% 4%;
 .detalhes details{
 
     color: var(--cor3);
+    padding:0.2%;
     font-size: 1.5em;
     list-style-type:" ";
     transition: all 0.5s ease-in-out;
@@ -109,7 +110,7 @@ margin: 10% 0% 1% 4%;
     list-style-type:"| ";
     transition: all 0.5s ease-in-out;
     width: 100%;
-   
+       text-wrap: nowrap;
    
 }    
 .detalhes details[open]{
@@ -129,7 +130,7 @@ ul{
 }
 li{
     color:var(--cor5);
-    
+
 }
 .btn{
     text-wrap: nowrap;
@@ -149,9 +150,60 @@ a i{
     margin-left: 0.3em;
     font-size: 1.5em;
 }
+<<<<<<< HEAD
 /* responsividade: */
 @media (max-width: 1300px){
 
     
     
 }
+=======
+@media (max-width:1000px){
+    
+    .detalhes{
+        text-align: start;
+        align-items: start;
+        justify-content: center;
+        display: flex;
+   
+        width: 90%;
+        margin: 5% 1% 1% 1%;
+        
+        }
+
+        .detalhes summary{
+            list-style-type:"| ";
+            transition: all 0.5s ease-in-out;
+            width: 100%;
+            margin: 0% 2%;
+               text-wrap: nowrap;
+           
+        }    
+  
+        .detalhes details[open]{
+            width: 46%;
+            padding:0.5%;
+            margin: 1% ;
+            border-radius: 0.5em;
+            
+        background-color: var(--cor4);
+        .summery{
+           color: var(--cor5);
+        }
+    }
+    .btn{
+        text-wrap: nowrap;
+        position: absolute;
+         bottom: 8%;
+         left: 33%;
+        margin: 5% 1% 0% 0%;
+        padding: 1.5em 5em ;
+            background-color: var(--cor6);
+            border-radius: 5em;
+            color: var(--cor3);
+            text-decoration: none;
+            font-size: 1.2em;
+    
+    }
+}
+>>>>>>> cad906b189d5537bc85c7939eb50d3a8bc3f6cb8
