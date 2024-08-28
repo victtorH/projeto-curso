@@ -116,7 +116,7 @@ nav li ul:hover {
 }
 
 /* Parte do inicio do sobre */
-.tep,.meio{  
+.tep,.mei,.descorrre{  
      position: absolute;
       height: 100vh;
     width: 100%;
@@ -127,8 +127,9 @@ nav li ul:hover {
     justify-content: center;  
 }
 .tep{
+    top: 0;
     z-index: 2;
-  
+  box-shadow: 1px 10px 20px 5px rgba(0, 0, 0, 0.582);
 
 }
 
@@ -136,52 +137,75 @@ nav li ul:hover {
 
 .meio{
     z-index: 1;
-    margin-top: 200vh;
-    
-background-color: cadetblue;
+    margin-top: 100vh;
+
 }
 .imagens{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 100fr;
+    
   
 }
-.um,.dois,.tres,.quatro{
+.imagens p{
+    position: absolute;
+    font-size: 6em;
+    bottom: 0%;
+    left: 0%;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.675), transparent);
+    padding: 21% ;
+    color: white;
+
+}
+.um,.dois{
     animation-name:eles;
     animation-iteration-count: infinite;
     position: relative;
     transition: all 2s ;
 }
+.tres,.quatro{
+    animation-name:eutros;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: all 2s ;
+}
  .um{
-    
+    background-image: url(https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
  animation-duration: 5s;
 }
 .dois{
-    animation-duration: 5.2s;
+    animation-duration: 5.1s;
+    background-image: url(https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .tres{
-    animation-duration: 5.4s;
+    background-image: url(https://images.pexels.com/photos/6615230/pexels-photo-6615230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    animation-duration: 5s;
 }
 .quatro{
-    animation-duration: 5.6s;
+    background-image: url(https://images.pexels.com/photos/6615230/pexels-photo-6615230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    animation-duration: 5.1s;
 }
 .img {  
      /* background-size: cover; */
     background-attachment: fixed;   
-    background-image: url(https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
 width: 100%;
-height: 100%;
+height: 200%;
 
 }
 @keyframes eles{
-    0%{
-        top:0%;
-    }
-    50%{
-        top: -100%;
-    }
-    100%{
-        top:0%;
-    }
+0%{
+
 }
+}
+@keyframes eutros{
+
+}
+.descorrre{
+    z-index: 2;
+    box-shadow: 1px -10px 20px 5px rgba(0, 0, 0, 0.582);
+    top: 200vh;
+  
+  }
