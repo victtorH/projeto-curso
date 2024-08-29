@@ -374,9 +374,9 @@ opacity: 0;
     border-radius: 1em;
     padding: 0% 5% ;
     transition: all 0.5s ease;
+    
 }
 .escrita:hover{
-    background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.693),transparent);
     box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.485);
     .bola1,.bola2{
     width: 0%;
@@ -392,16 +392,28 @@ opacity: 0;
     }
     .Bonificaoes{
         top: -20%;
-    text-align: left;
     }
     .Obras{
-        text-align: left;
+        
         top: 20%;
     }
-    .Obras h3, .Bonificaoes h3, .Bonificaoes p{
+    .Obras, .Bonificaoes{    
+        
+        box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.485);
         text-align: left;
+        border-radius: 0.5em;
+        padding: 2%;
+        width: 100%;
+        
     }
-    
+    .Obras h3, .Bonificaoes h3{
+        position: relative; 
+        left: 0%;
+    }
+    .Bonificaoes p{
+        text-align: start;
+    }
+  
 }
 .bola1{
     display: block;
@@ -472,7 +484,9 @@ transition: all 0.5s ease;
 }
 .Obras h3{
     margin-right: 3em;
-    text-align: right ;
+  position: relative;
+  left: 50%;
+transition: all 0.5s ease;
 }
 .Bonificaoes{
     position: relative;
@@ -499,13 +513,14 @@ box-shadow: -5px -5px 0px  white ;
 }
 .Bonificaoes h3{
     transition: all 0.5s ease;
-    text-align: center;
+    left: 30%;
+    position: relative;
 }
 
 .block h3{
     font-size: 1.5em;
   margin-left: 5%;
-  transition: all 0.5s ease;
+  
  
 }
 .block p{
