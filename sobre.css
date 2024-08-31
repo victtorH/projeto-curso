@@ -703,7 +703,34 @@ details[open] h3{
     display: flex;
     justify-content: flex-end;
 }
+.btn-pro{
+    font-weight: 600;
+   right: 7em;
+   top: 43em;
+   position: absolute;
+   z-index: 1;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   border-radius:5em;
+height: 10%;
+   width: 25%;
+   color: rgb(255, 255, 53);
+   background-color: black;
+   transition: all 0.3s ease-in-out;
+   padding: 1em;
 
+}
+.btn-pro:hover{
+transform: scale(1.1);
+background-image: linear-gradient(to top, black, rgb(40, 40, 40));
+box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.376);
+img{
+   margin-top: 0.2em;
+   transform: scale(1.1);
+}
+}
+/* responsa */
 @media (max-width:900px) {
     .nav{
         top: 0%;
