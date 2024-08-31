@@ -164,7 +164,7 @@ background-attachment: fixed;
     align-items: flex-start;
     height: 24%;
     width: 74%;
-  
+  transition: all 1s ease;
 }
 .content:hover{
 .text{
@@ -369,6 +369,8 @@ opacity: 0;
     margin: 2% 0% 0% 0%;
     font-size: 3em;
     text-wrap: nowrap;
+    opacity: 0;
+    transition: all 1s ease;
 }
 .escrita{
     background-image: none;
@@ -388,6 +390,7 @@ opacity: 0;
     }
     h2{
         top: 0%;
+        opacity: 1;
     }
     .bola1{
         opacity: 1;
@@ -699,4 +702,96 @@ details[open] h3{
 .card p{
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width:900px) {
+    .nav{
+        top: 0%;
+        margin-top: 0%;
+    }
+    .li{
+        top: 0%;
+        margin-top: 0%;
+        width: 100%;
+        border-radius: 0%;
+    }
+    .li ul {
+        margin: 1%;
+    }
+    .li ul:hover{
+        font-size: 1em;
+        height: 100%;
+      
+    }
+    @keyframes navani {
+        0% {
+    
+            margin-top: -50%;
+        }
+    
+        50% {
+    
+            margin-top: 25%;
+        }
+    
+        100% {
+    
+            margin-top: 0%;
+        }
+    }
+    /* header */
+    .tep{
+        text-align: left;
+       height: 150vh;
+    }
+    .content{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        position: static;
+    }
+    .titulo{
+        
+        text-wrap: wrap;
+    }
+    /* meio */
+    .meio{
+        margin-top: 150%;
+    }
+    .block{
+        left: 0%;
+        top: 150%;
+        width: 100%;
+    }
+    .Bonificaoes, .Obras{
+        left: -23%;
+      width: 150%;
+    }
+    /* final */
+
+    .descorrre{  
+        top: 250vh;
+        flex-direction: column;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    
+    details[open]{
+        margin-bottom: 20%;
+    }
+    .descorrre span{
+        top: 4.5%;
+    }
+    
+}
+@media (max-width:1600px){
+
+    .block:hover{
+    .bola2{
+     left: 89%;
+    }
+}
 }

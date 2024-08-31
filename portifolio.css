@@ -817,8 +817,7 @@ padding: 1.8em ;
  }
 }
 
-     /* Responsividade */
-     /* para tela de 1600px */
+    
       @media (max-width:1600px) {
         .ft  .span2{   
    
@@ -865,8 +864,8 @@ padding: 1.8em ;
           .span{
             border-radius: 3em 0em 1em 0em;
          position: relative;
-         left: 20em;
-         top: 23.5em;
+         left: 21em;
+         top: 23.8em;
            transition: all 0.3s ease-in-out;
         
             background-color:rgb(255, 255, 255);
@@ -897,6 +896,47 @@ padding: 1.8em ;
             box-shadow: 10px 10px 0px rgb(255, 255, 255);
     background-color: transparent;
     transition: all 0.3s ease-in-out ;
+            
+        }
+        /* segunda arte do ver mais */
+        .ft3  .span2{   
+   
+            border-radius: 0em 3em 0em 0em;
+           position:relative;
+          transition: all 0.4s ease-in-out;
+           left: 0em;
+          top: 23.5em;
+           background-color:rgb(255, 255, 255);
+       padding: 1.8em ;
+          
+       }
+      
+
+        .ft3 span::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 0em;
+            bottom: 4.8em;
+            box-shadow: -9px 9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
+            
+        }
+
+        .ft3 .span2::before{
+            content: ' ';
+            height: 2em;
+            width: 2em;
+            border-radius: 100%;
+            position: absolute;
+            left: 18.8em;
+            bottom: 0.18em;
+            box-shadow: -7.5px 8.9px rgb(255, 255, 255);
+        background-color:transparent;
+        transition: all 0.3s ease-in-out ;
             
         }
      }
