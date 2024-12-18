@@ -576,17 +576,25 @@ transition: all 0.5s ease;
     .conteiner{
         animation-name:conteiner ;
         animation-duration: 5s;
+        
     }
     span{
         animation-delay: 5s;
         animation-name: click;
         animation-duration: 20s;
     }
+    .btn-pro{
+       
+        animation-name: conteiner2;
+        animation-duration: 3s;
+    }
+  
 }
 .descorrre h2{
     font-size: 3em;
     position: relative;
-    top: -15%;
+    left:10%;
+    top: -16%;
 }
 .conteiner{
     position: relative;
@@ -608,6 +616,26 @@ text-align: center;
     
     100%{
         left: 0;
+    }
+}
+@keyframes conteiner2 {
+    0%{
+        top: -100%;
+        opacity: 0;
+        
+    }
+    50%{
+        top: -100%;
+        opacity: 0;
+        
+    }
+    70%{
+        top: 30%;
+        opacity: 1;
+    }
+    
+    100%{
+        top: 20%;
     }
 }
 details{
@@ -705,21 +733,22 @@ details[open] h3{
 }
 .btn-pro{
     font-weight: 600;
-   right: 7em;
-   top: 43em;
+   left: 9%;
+   top: 20%;
    position: absolute;
    z-index: 1;
    display:flex;
    justify-content: center;
    align-items: center;
    border-radius:5em;
-height: 10%;
-   width: 25%;
+height: 7%;
+   width: 20%;
    color: rgb(255, 255, 53);
    background-color: black;
    transition: all 0.3s ease-in-out;
    padding: 1em;
 
+    
 }
 .btn-pro:hover{
 transform: scale(1.1);
