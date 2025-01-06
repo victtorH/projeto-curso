@@ -816,6 +816,28 @@ padding: 1.8em ;
   }
  }
 }
+@media (max-width:700px){
+    /*topo*/
+    .nav{
+        top: 0%;
+        margin-top: 0%;
+    }
+    .li{
+        top: 0%;
+        margin-top: 0%;
+        width: 100%;
+        border-radius: 0%;
+        animation-name: none;
+    }
+    .li ul {
+        margin: 0%;
+    }
+    .li ul:hover{
+        font-size: 1em;
+        height: 100%;
+      
+    }
+}
 
     
       @media (max-width:1600px) {

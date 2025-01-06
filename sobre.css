@@ -770,6 +770,7 @@ img{
         margin-top: 0%;
         width: 100%;
         border-radius: 0%;
+        animation-name: none;
     }
     .li ul {
         margin: 1%;
@@ -844,6 +845,9 @@ img{
     
 }
 @media (max-width:1600px){
+    .btn-pro{
+        
+    }
 
     .block:hover{
     .bola2{
