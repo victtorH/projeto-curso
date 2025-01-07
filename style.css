@@ -519,6 +519,9 @@ transition: all 1s ease-in-out;
         margin-top: 0%;
         width: 100%;
     }
+    .li img{
+        height: 2em;
+    }
     .li{
        
         left: 0%;
@@ -529,7 +532,7 @@ transition: all 1s ease-in-out;
         animation-name: none;
     }
     .li ul {
-        margin: 1% 1%;
+        
         font-size: small;
        
     }
