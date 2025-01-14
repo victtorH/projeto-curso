@@ -383,7 +383,6 @@ opacity: 0;
     .escrita{
 
         position: relative;
-        /* box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.485); */
         background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.693),transparent);
         left: 0%;
         width: 100%;
@@ -760,46 +759,42 @@ img{
 }
 }
 /* responsa */
-@media (max-width:900px) {
-    .nav{
-        top: 0%;
-        margin-top: 0%;
-    }
-    .li{
-        top: 0%;
-        margin-top: 0%;
-        width: 100%;
-        border-radius: 0%;
-        animation-name: none;
-    }
-    .li ul {
-        margin: 1%;
-    }
-    .li ul:hover{
-        font-size: 1em;
-        height: 100%;
-      
-    }
-    @keyframes navani {
-        0% {
+@media (max-width:600px) {
+/*topo*/
+.nav{
+        
+    top: 0%;
+    margin-top: 0%;
+    width: 100%;
+}
+.li img{
+    height: 2em;
+}
+.li{
+   
+    left: 0%;
+    top: 0%;
+    margin-top: 0%;
+    width: 100%;
+    border-radius: 0%;
+    animation-name: none;
+}
+.li ul {
     
-            margin-top: -50%;
-        }
-    
-        50% {
-    
-            margin-top: 25%;
-        }
-    
-        100% {
-    
-            margin-top: 0%;
-        }
-    }
-    /* header */
+    font-size: small;
+   
+}
+.li ul:hover{
+    font-size: 1em;
+    height: 100%;
+  
+}
     .tep{
         text-align: left;
        height: 150vh;
+    }
+    .tep span{
+        display: none;
     }
     .content{
         position: relative;
@@ -817,20 +812,211 @@ img{
     .meio{
         margin-top: 150%;
     }
+    /* primeira escrita */
+    .meio h2 {
+
+        font-size: 1em;
+        span{
+            font-size: 1em;
+        }
+    }
+    /* laterais dançantes */
+    .um{
+        display: none;
+    }
+    .dois{
+        display: none;
+
+    }
+    /* base do meio */
     .block{
         left: 0%;
         top: 150%;
         width: 100%;
     }
+    /* as duas divisorias */
     .Bonificaoes, .Obras{
         left: -23%;
-      width: 150%;
+      width: 100%;
+      margin: 0%;
+
     }
+    /* qunado entra no meio */
+    .block:hover{
+        .escrita{
+    
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.693),transparent);
+            left: 0%;
+            top: 20%;
+            width: 100%;
+        }
+        h2{
+            top: 0%;
+            opacity: 1;
+        }
+        .bola1{
+            opacity: 1;
+           width: 50%;
+        }
+        .bola2{
+            opacity: 1;
+           width: 25%;
+
+        }
+      
+        .Bonificaoes{
+            top: -15%;
+        }
+        .Obras{
+            top: 5%;
+        }
+        .Obras, .Bonificaoes{
+       border: none;
+       box-shadow: none;
+       width: 100%;
+    left: 0%;
+        }
+        .Obras::before{
+            opacity: 1;
+            content:" ";
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            background-color: rgba(0, 255, 255, 0);
+            border-radius: 100%;
+            left: 99.3%;
+            top: 112%;
+            box-shadow: 5px 5px 0px white ;
+            z-index: 5;
+        }
+        .Bonificaoes::before{
+            opacity: 1;
+            content: " ";
+            position: absolute;
+            top: -61%;
+            left: -5.5%;
+            width:2em ;
+            height: 2em;
+            display: block;
+            background-color: rgba(0, 255, 255, 0);
+            border-radius: 100%;
+            box-shadow: -5px -5px 0px  white ;
+            }
+        .Obras h3{
+    left: 30%;
+        }
+         .Bonificaoes h3{
+            position: relative; 
+            left: 30%;
+      
+        }
+        .Bonificaoes p{
+            text-align: start;
+        }
+      
+    }
+    .bola1{
+        display: block;
+        position: relative;
+        top: 8%;
+        margin: 5% 0%;
+        width: 0%;
+        left: -5.9%;
+        height: 8em;
+        border-radius: 0em 8em 8em 0em;
+      background-color: white;
+      transition: all 0.5s ease;
+        opacity: 0;
+    }
+    .bola1::before{
+        content: " ";
+        position: relative;
+        left: 0.5%;
+        top: -24.5%;
+        height: 2em;
+        width: 2em;
+        display: block;
+        background-color: rgba(0, 255, 255, 0);
+        border-radius: 100%;
+        box-shadow: -8px 10px 0px rgb(255, 255, 255);
+    }
+    .bola2{
+        display: block;
+        position: relative;
+        top: -20%;
+        width: 0em;
+        height: 8em;
+        border-radius: 8em  0em 0em 8em;
+      background-color: white;
+      transition: all 0.5s ease;
+      opacity: 0;
+      left: 103%;
+    }
+    .bola2::before{
+        content: " ";
+        position: relative;
+       top:100%;
+       left: 75.5%;
+        height: 2em;
+        width: 2em;
+        display: block;
+        background-color: rgba(0, 255, 255, 0);
+        border-radius: 100%;
+        box-shadow: 8px -7px 0px rgb(255, 255, 255);
+       
+    }
+    .Obras{
+    position: relative;
+    top: 5%;
+    transition: all 0.5s ease;
+    }
+    .Obras, .Bonificaoes{    
+        position: relative;
+        box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.485);
+        text-align: left;
+        border-radius: 0.5em;
+        padding: 1%;
+        height: 20%;
+        left: -29%;
+        width: 100%;
+        
+    }
+    
+    .Bonificaoes::before, .Obras::before{
+        display: none;
+        opacity: 0;
+    }
+    .Obras h3{
+      position: relative;
+      left: 0%;
+    transition: all 0.5s ease;
+    }
+    .Bonificaoes{
+        position: relative;
+        top: -40%;
+        transition: all 0.5s ease;
+    }
+    
+    
+    .Bonificaoes p {
+        transition: all 0.5s ease;
+        text-align: start;
+    }
+    .Bonificaoes h3{
+        transition: all 0.5s ease;
+        position: relative; 
+        left: 0%;
+    }
+
     /* final */
 
     .descorrre{  
         top: 250vh;
         flex-direction: column;
+    }
+    .descorrre h2{
+        font-size: 2em;
     }
     .conteiner{
         flex-direction: column;
@@ -843,15 +1029,4 @@ img{
         top: 4.5%;
     }
     
-}
-@media (max-width:1600px){
-    .btn-pro{
-        
-    }
-
-    .block:hover{
-    .bola2{
-     left: 89%;
-    }
-}
 }
